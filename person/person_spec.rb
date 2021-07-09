@@ -44,11 +44,16 @@ describe Person do
         
     end
 
-    describe "fin_by_funcion" do
+    describe "fin_by_funcion_dynamic" do
 
-        it 'it should still not break even when the variable name of @@all chnages to something readerble' do
-            
-            expect(Person.all.count).to eq(4)  
+        it 'find_by_name' do
+            # get first person
+            person = Person.find_by_name("Kwame")
+            person.phone = "0277882277"
+
+            expect(Person.methods).to include("find_by_name".to_sym)  
+            expect(person).to be_a(Person)
+            expect(person.phone).to eq("0277882277")
 
         end
         
