@@ -1,3 +1,3 @@
 task :test do
-   puts `bin/rspec main_spec.rb` 
+    system('bin/rspec song_spec.rb')
 end
