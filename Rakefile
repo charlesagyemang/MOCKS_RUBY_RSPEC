@@ -6,3 +6,7 @@ end
 task :car_test do
    system('bin/rspec car/car_spec.rb')
 end
+
+task :person_test do
+    system('bin/rspec person/person_spec.rb')
+ end

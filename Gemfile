@@ -7,4 +7,4 @@ git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
 # gem "rails"
 gem 'rspec'
 
-gem 'youtube-dl.rb'
+gem 'pry', '~> 0.13.1'
